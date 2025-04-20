@@ -1,0 +1,60 @@
+x=30
+y=30
+def setup():
+    size(700,500)
+def draw():
+    global x, y
+    fill(255)
+    ellipse(200,350,50,20)
+    ellipse(280,350,50,20)
+    push()
+    translate(250,280)
+    rotate(radians(30))
+    rect(0,0,5,70)
+    pop()
+    push()
+    translate(260,270)
+    rotate(radians(-15))
+    rect(0,0,5,75)
+    pop()
+    fill(255,255,0)
+    rect(239,180,50,100)
+    fill(255)
+    ellipse(280,210,20,20)
+    ellipse(250,210,20,20)
+    fill(0)
+    ellipse(250,210,10,10)
+    ellipse(280,210,10,10)
+    #push()
+    #translate(240,220)
+    #rotate(radians(100))
+    #fill(0)
+    push()
+    translate(240,210)
+    rotate(radians(90))
+    rect(0,0,5,55)
+    pop()
+    rect(289,210,55,5)
+    push()
+    translate(340,210)
+    rotate(radians(-30))
+    rect(0,0,45,5)
+    pop()
+    rect(180,210,45,5)
+    push()
+    translate(180,210)
+    rotate(radians(-135))
+    rect(0,0,45,5)
+    pop()
+    fill(255)
+    ellipse(380,180,25,25)
+    ellipse(160,175,25,25)
+    fill(255,0,0)
+    frameRate(2)
+    rect(250,230,x,y)
+    x=x-1
+    y=y-1
+    
+
+    
+    
